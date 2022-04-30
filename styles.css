@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./images/header_image.png");
+}
+
+p {
+    font-size: 48px;
+    color: fuchsia;
+    background-image: "/images/header_image.png";
+}
