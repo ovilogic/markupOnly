@@ -80,7 +80,7 @@ body {
             border: none;
             border-radius: 8px;
             color: white;
-            background-color: navy;
+            background-color: rgb(51, 89, 135);
             font-size: 10px;
             font-weight: bold;
             padding: 2px;
@@ -159,7 +159,7 @@ body {
         width: 100%;
         position: relative;
         left: 0px;
-        overflow: hidden
+        overflow: hidden;
 
         }
 
@@ -170,85 +170,226 @@ body {
         position: relative;
         top: -19.46vh;
         z-index: -1;
-        }
-
-        .services-content {
-            background-color: white;
-            min-height: 85vh;
-            width: 100%;
-            position: relative;
-            top: 9vh;
 
         }
 
-        .services h1 {
-            position: relative;
-            top: 140px;
-            text-align: center;
+    .services-content {
+        background-color: white;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        top: 5vh;
+        min-height: 100vh;
 
+
+    }
+
+            .services h1 {
+                position: relative;
+                top: 140px;
+                text-align: center;
+
+            }
+
+            .grid-container {
+                display: grid;
+                position: relative;
+                left: 10vw;
+                top: 160px;
+                grid-template-columns: auto auto auto auto;
+                grid-template-rows: auto auto auto auto;
+                grid-gap: 10px;
+                grid-row-gap: 0vh;
+                max-width: 85%;
+            }
+
+            .category-title {
+                padding-left: 2px;
+                font-size: 28px;
+                color: rgb(51, 89, 135);
+                max-width: 80%;
+                margin-bottom: 2vh;
+                }
+
+            .category {
+                width: 80%;
+                padding: 2vh;
+                font-size: 22px;
+                color: rgb(90, 90, 90);
+                text-decoration: none;
+            }
+
+            .category-grey {
+                background-color: rgb(225, 225, 225);
+                font-size: 22px;
+                padding: 2vh;
+                max-width: 80%;
+                min-width: 60px;
+                color: rgb(90, 90, 90);
+            }
+
+            a {
+                text-decoration: none;
+                color: rgb(90, 90, 90);
+            }
+
+            .work {
+                height: 8vh;
+                min-width: 15vw;
+                color: white;
+                font-size: 25px;
+                padding: 1.2vh;
+                background-color: rgb(51, 89, 135);
+                border-radius: 10px;
+                position: relative;
+                top: 34vh;
+                left: 42.3vw;
+            }
+
+            .work:active {
+                box-shadow: inset 0px 0px 5px navy;
+                height: 7.9vh;
+                width: 14.9vw;
+                font-size: 24.9px;
+            }
+
+    .portfolio {
+        position: relative;
+        background-color: rgb(51, 89, 135);
+        height: 110vh;
+        width: 100%;
+
+    }
+
+        .portfolio h1 {
+            color: white;
+            position: absolute;
+            top: 10px;
+            left: 44vw;
         }
 
-        .grid-container {
+        .portfolio-grid {
+            align-content: center;
             display: grid;
+            height: 60%;
+            column-gap: 2%;
+            align-content: center;
             position: relative;
-            left: 10vw;
-            top: 160px;
-            grid-template-columns: auto auto auto auto;
-            grid-template-rows: auto auto auto auto;
-            font-family: Tahoma;
-            grid-gap: 10px;
-            grid-row-gap: 0vh;
-            max-width: 80%;
-
+            left: 5vw;
+            top: 150px;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            max-width: 90%;
 
         }
 
-        .category-title {
-            padding-left: 2px;
-            font-size: 30px;
-            color: navy;
-            max-width: 80%;
-            margin-bottom: 2vh;
-
-        }
-
-        .category {
-
-            width: 80%;
-            padding: 2vh;
+        .portfolio-item {
             font-size: 24px;
-            color: rgb(90, 90, 90);
-            text-decoration: none;
-
-
-        }
-
-        .category-grey {
-            background-color: rgb(225, 225, 225);
-            font-size: 24px;
-            padding: 2vh;
-            width: auto;
-            max-width: 80%;
+            width: 100%;
+            height: 70%;
             min-width: 60px;
             color: rgb(90, 90, 90);
         }
 
-        a {
+        .portfolio-item a {
+            color: white;
             text-decoration: none;
-            color: rgb(90, 90, 90);
+            display: inline-block;
+            width: 100%;
+            height: 130%;
+
+
         }
 
-        .work {
-            height: 10vh;
-            width: 15vw;
-            color: white;
-            font-size: 30px;
-            padding: 2vh;
-            background-color: navy;
-            border-radius: 10px;
+        .portfolio-item a img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .portfolio-item p {
+            display: inline-block;
             position: relative;
-            top: 30vh;
-            left: 42.3vw;
+            top: -9vh;
+            left: 2vw;
+            margin: 0;
+            padding: 0;
+            width: 80%;
+        }
+
+    .blog {
+        position: relative;
+        background-color: white;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .blog h1 {
+            color: black;
+            position: absolute;
+            top: 10px;
+            left: 40vw;
+        }
+
+        .blog-grid {
+
+            align-content: center;
+            display: grid;
+            height: 80%;
+            column-gap: 2%;
+            align-content: center;
+            position: relative;
+            left: 5vw;
+            top: 110px;
+            grid-template-columns: auto auto auto;
+            max-width: 90%;
+
+        }
+
+        .blog-item {
+            font-size: 20px;
+            width: 100%;
+            height: 70%;
+            min-width: 60px;
+            color: rgb(90, 90, 90);
+
+        }
+
+        .blog-item img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .blog-item p {
+            display: inline-block;
+
+            margin-top: 15px;
+            padding: 10;
+            width: 100%;
+            height: 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .blog-item button {
+            height: 7vh;
+            width: 14vw;
+            border-radius: 17px;
+            position: relative;
+            font-size: 16px;
+            left: 25%;
+        }
+
+        .blog-item button:hover {
+            color: magenta;
+        }
+
+        .blog-item button:active {
+            box-shadow: inset 0px 0px 5px navy;
+            height: 6.9vh;
+            width: 13.9vw;
+            font-size: 15.9px;
+            left: 25.1%;
+
         }
 
 
