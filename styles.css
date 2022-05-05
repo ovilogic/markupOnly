@@ -1,12 +1,13 @@
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, Verdana, sans-serif;
+
 }
 
 body {
     margin: 0;
     padding: 0;
-    width: 1980px;
+    width: 1920px;
     height: 1080px;
 
     background-image: url("./images/header_image.png");
@@ -156,7 +157,7 @@ body {
 
       #bottom {
 
-       
+
 
         margin-top: -40px;
         text-align: right;
@@ -193,14 +194,13 @@ body {
         top: 5vh;
         min-height: 100vh;
 
-
     }
 
             .services h1 {
+                width: 50%;
                 position: relative;
                 top: 140px;
-                text-align: center;
-
+                left: 42%;
             }
 
             .grid-container {
@@ -246,6 +246,8 @@ body {
             }
 
             .work {
+            border: 2px solid magenta;
+
                 height: 8vh;
                 min-width: 15vw;
                 color: white;
@@ -255,7 +257,7 @@ body {
                 border-radius: 10px;
                 position: relative;
                 top: 34vh;
-                left: 42.3vw;
+                left: 41.5%;
             }
 
             .work:active {
@@ -268,7 +270,7 @@ body {
     .portfolio {
         position: relative;
         background-color: rgb(51, 89, 135);
-        height: 110vh;
+        height: 100vh;
         width: 100%;
 
     }
@@ -277,40 +279,41 @@ body {
             color: white;
             position: absolute;
             top: 10px;
-            left: 44vw;
+            left: 43%;
         }
 
         .portfolio-grid {
+
             align-content: center;
             display: grid;
-            height: 60%;
+            height: 80vh;
+            max-width: 70%;
             column-gap: 2%;
             align-content: center;
             position: relative;
-            left: 5vw;
-            top: 150px;
+            left: 15%;
+            top: 20vh;
             grid-template-columns: auto auto auto;
             grid-template-rows: auto auto auto;
-            max-width: 90%;
 
         }
 
         .portfolio-item {
+
             font-size: 24px;
             width: 100%;
-            height: 70%;
+            height: 60%;
             min-width: 60px;
             color: rgb(90, 90, 90);
         }
 
         .portfolio-item a {
+
             color: white;
             text-decoration: none;
             display: inline-block;
-            width: 100%;
+            width: 85%;
             height: 130%;
-
-
         }
 
         .portfolio-item a img {
@@ -404,6 +407,5 @@ body {
 
         }
 
-@media screen and (max-width
 
 
