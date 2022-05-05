@@ -1,13 +1,13 @@
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, Verdana, sans-serif;
-
-
 }
 
 body {
     margin: 0;
     padding: 0;
+    width: 1980px;
+    height: 1080px;
 
     background-image: url("./images/header_image.png");
     background-size: 100% 100%;
@@ -23,13 +23,15 @@ body {
     flex-flow: row wrap;
     /* keep the logo and navbar centred vertically and aligned: */
     align-items: center;
-    /* needed for the navbar position: absolute: */
+    /* position: relative needed later for the navbar position: absolute: */
     position: relative;
+
 }
 
     .logo {
+
         display: block;
-        height: 29px;
+        height: 7vh;
         margin-left: 3vw;
 
     }
@@ -37,11 +39,17 @@ body {
     /* Add a transparent background color to the top navigation */
     .topnav {
         /* stick the navbar to the right of the page: */
+
+        display: flex;
+        flex-direction: row;
+        width: 73vw;
         position: absolute;
         right: 15px;
-        font-size: 10px;
+        font-size: 2vh;
         background-color: none;
-        right: 2vw;
+        right: 1vw;
+        padding: 20px;
+
 
 
     }
@@ -55,6 +63,7 @@ body {
         text-decoration: none;
         font-family: Arial;
         font-weight: bold;
+
     }
 
 
@@ -65,6 +74,7 @@ body {
             font-family: 'Arial';
             color: #f2f2f2;
             border: none;
+            font-size: 14px;
             }
 
          option {
@@ -77,7 +87,7 @@ body {
             }
 
          .contact {
-            border: none;
+            border: 1px white solid;
             border-radius: 8px;
             color: white;
             background-color: rgb(51, 89, 135);
@@ -87,8 +97,9 @@ body {
             height: 25px;
             width: 90px;
             position: relative;
-            top: 7px;
-            left: 10px;
+            top: 11.5px;
+            left: 20px;
+
             }
 
 
@@ -106,6 +117,7 @@ body {
     .welcome {
         position: relative;
         height: 40vh;
+        width: 94%;
     }
 
 
@@ -113,20 +125,18 @@ body {
         color: white;
         font-family: Arial, Helvetica, Verdana, sans-serif;
 
-        text-align: center;
+
 
       }
 
       #top {
 
-        font-size: 24px;
-        text-align: left;
-        width: 60vw;
-        position: relative;
-        top: -20px;
-        left: 25%;
-        right: 25%;
-           }
+        font-size: 4vh;
+        text-align: center;
+        width: 85%;
+
+
+      }
 
       #middle {
         font-size: 38px;
@@ -145,12 +155,14 @@ body {
             }
 
       #bottom {
-        width: 60%;
+
+       
+
         margin-top: -40px;
         text-align: right;
         position: absolute;
-        right: 0px;
-        right: 15vw;
+        top: 30vh;
+        right: 30%;
 
         }
 
@@ -392,5 +404,6 @@ body {
 
         }
 
+@media screen and (max-width
 
 
