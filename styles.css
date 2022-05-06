@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     width: 1920px;
-    height: 1080px;
+    height: 100%;
 
     background-image: url("./images/header_image.png");
     background-size: 100% 100%;
@@ -33,7 +33,7 @@ body {
 
         display: block;
         height: 7vh;
-        margin-left: 3vw;
+        margin-left: 50px;
 
     }
 
@@ -43,12 +43,12 @@ body {
 
         display: flex;
         flex-direction: row;
-        width: 73vw;
+        width: 1000px;
         position: absolute;
         right: 15px;
-        font-size: 2vh;
+        font-size: 14px;
         background-color: none;
-        right: 1vw;
+        right: 50px;
         padding: 20px;
 
 
@@ -62,7 +62,7 @@ body {
         text-align: center;
         padding: 15px 12px;
         text-decoration: none;
-        font-family: Arial;
+
         font-weight: bold;
 
     }
@@ -70,12 +70,13 @@ body {
 
         select {
             background: none;
-            width: 76px;
-            font-size: 9px;
+            width: 87px;
             font-family: 'Arial';
             color: #f2f2f2;
             border: none;
             font-size: 14px;
+            padding-left: 22;
+            padding-right: 0;
             }
 
          option {
@@ -88,7 +89,7 @@ body {
             }
 
          .contact {
-            border: 1px white solid;
+            border: none;
             border-radius: 8px;
             color: white;
             background-color: rgb(51, 89, 135);
@@ -99,14 +100,13 @@ body {
             width: 90px;
             position: relative;
             top: 11.5px;
-            left: 20px;
+            left: 29px;
 
             }
 
 
     /* Change the color of links on hover */
     .topnav a:hover, select:hover {
-
         outline: 1px white dotted;
     }
     
@@ -125,9 +125,6 @@ body {
     .welcome p {
         color: white;
         font-family: Arial, Helvetica, Verdana, sans-serif;
-
-
-
       }
 
       #top {
@@ -156,15 +153,11 @@ body {
             }
 
       #bottom {
-
-
-
         margin-top: -40px;
         text-align: right;
         position: absolute;
         top: 30vh;
         right: 30%;
-
         }
 
     .swipe {
@@ -183,17 +176,16 @@ body {
         position: relative;
         top: -19.46vh;
         z-index: -1;
-
         }
 
     .services-content {
+
         background-color: white;
         height: 100vh;
         width: 100%;
         position: relative;
         top: 5vh;
         min-height: 100vh;
-
     }
 
             .services h1 {
@@ -240,14 +232,13 @@ body {
                 color: rgb(90, 90, 90);
             }
 
-            a {
+            .grid-container a {
                 text-decoration: none;
                 color: rgb(90, 90, 90);
             }
 
             .work {
-            border: 2px solid magenta;
-
+                border: none;
                 height: 8vh;
                 min-width: 15vw;
                 color: white;
@@ -265,6 +256,7 @@ body {
                 height: 7.9vh;
                 width: 14.9vw;
                 font-size: 24.9px;
+                color: magenta;
             }
 
     .portfolio {
@@ -272,7 +264,6 @@ body {
         background-color: rgb(51, 89, 135);
         height: 100vh;
         width: 100%;
-
     }
 
         .portfolio h1 {
@@ -333,36 +324,43 @@ body {
 
     .blog {
         position: relative;
+
         background-color: white;
         height: 100vh;
         width: 100%;
     }
 
     .blog h1 {
+
+            width: 92%;
             color: black;
             position: absolute;
             top: 10px;
-            left: 40vw;
+            left: 0px;
+            text-align: center
         }
 
         .blog-grid {
 
-            align-content: center;
+
             display: grid;
+            justify-content: center;
+
             height: 80%;
             column-gap: 2%;
             align-content: center;
-            position: relative;
-            left: 5vw;
-            top: 110px;
+
             grid-template-columns: auto auto auto;
-            max-width: 90%;
+            max-width: 100%;
+            position: relative;
+            bottom: -90px;
 
         }
 
         .blog-item {
+            
             font-size: 20px;
-            width: 100%;
+            width: 400px;
             height: 70%;
             min-width: 60px;
             color: rgb(90, 90, 90);
