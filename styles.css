@@ -7,52 +7,44 @@
 body {
     margin: 0;
     padding: 0;
-    width: 1920px;
+    width: 100%;
     height: 100%;
-
     background-image: url("./images/header_image.png");
     background-size: 100% 100%;
     background-attachment: fixed;
-
 }
 
 .topbar {
 
     width: 100%;
     height: 15%;
+    margin-top: 30px;
     display: flex;
     flex-flow: row wrap;
     /* keep the logo and navbar centred vertically and aligned: */
     align-items: center;
     /* position: relative needed later for the navbar position: absolute: */
     position: relative;
-
 }
 
     .logo {
-
         display: block;
-        height: 7vh;
-        margin-left: 50px;
-
+        height: 70px;
+        margin-left: 60px;
     }
 
     /* Add a transparent background color to the top navigation */
     .topnav {
         /* stick the navbar to the right of the page: */
-
+        justify-content: right;
         display: flex;
         flex-direction: row;
-        width: 1000px;
+        width: 70%;
         position: absolute;
-        right: 15px;
+        right: 90px;
         font-size: 14px;
         background-color: none;
-        right: 50px;
         padding: 20px;
-
-
-
     }
     
     /* Style the links inside the navigation bar */
@@ -62,11 +54,8 @@ body {
         text-align: center;
         padding: 15px 12px;
         text-decoration: none;
-
         font-weight: bold;
-
     }
-
 
         select {
             background: none;
@@ -85,7 +74,7 @@ body {
              }
 
          #about {
-            width: 86px;
+            width: 108px;
             }
 
          .contact {
@@ -93,21 +82,24 @@ body {
             border-radius: 8px;
             color: white;
             background-color: rgb(51, 89, 135);
-            font-size: 10px;
+            font-size: 12px;
             font-weight: bold;
             padding: 2px;
-            height: 25px;
-            width: 90px;
+            height: 35px;
+            width: 130px;
             position: relative;
-            top: 11.5px;
+            top: 7px;
             left: 29px;
-
             }
 
 
     /* Change the color of links on hover */
     .topnav a:hover, select:hover {
         outline: 1px white dotted;
+    }
+
+    .contact:hover {
+        color: magenta;
     }
     
     /* Add a color to the active/current link */
@@ -117,31 +109,24 @@ body {
 
     .welcome {
         position: relative;
-        height: 40vh;
-        width: 94%;
+        height: 25vh;
+        width: 100%;
     }
-
 
     .welcome p {
         color: white;
-        font-family: Arial, Helvetica, Verdana, sans-serif;
       }
 
       #top {
-
-        font-size: 4vh;
+        font-size: 38px;
         text-align: center;
-        width: 85%;
-
-
+        width: 88%;
       }
 
       #middle {
-        font-size: 38px;
+        font-size: 48px;
         margin-top: -18px;
         text-align: center;
-        font-family: Arial, Helvetica, Verdana, sans-serif;
-
       }
 
         #mid1 {
@@ -153,46 +138,51 @@ body {
             }
 
       #bottom {
-        margin-top: -40px;
+
+        margin-top: -20px;
+        font-size: 18px;
+        width: 75%;
         text-align: right;
-        position: absolute;
-        top: 30vh;
-        right: 30%;
+
         }
 
     .swipe {
-        height: 30vh;
+        height: 29vh;
         width: 100%;
         position: relative;
         left: 0px;
         overflow: hidden;
-
         }
 
-    .services {
+    .below-swipe {
         background-color: white;
-        height: 19vh;
+        height: 21vh;
         width: 100%;
         position: relative;
-        top: -19.46vh;
+        top: -18.7vh;
         z-index: -1;
         }
 
     .services-content {
 
         background-color: white;
-        height: 100vh;
+        height: 85vh;
         width: 100%;
         position: relative;
-        top: 5vh;
-        min-height: 100vh;
+        top: 10vh;
+
     }
 
-            .services h1 {
-                width: 50%;
+            .services-content h1 {
+
+                width: 100%;
+                text-align: center;
                 position: relative;
-                top: 140px;
-                left: 42%;
+                top: 85px;
+                font-size: 48px;
+                font-family: , sans-serif;
+
+
             }
 
             .grid-container {
@@ -242,69 +232,68 @@ body {
                 height: 8vh;
                 min-width: 15vw;
                 color: white;
-                font-size: 25px;
-                padding: 1.2vh;
+                font-size: 36px;
                 background-color: rgb(51, 89, 135);
-                border-radius: 10px;
+                border-radius: 30px;
                 position: relative;
-                top: 34vh;
-                left: 41.5%;
+                top: 250px;
+                left: 42.5%;
             }
 
             .work:active {
                 box-shadow: inset 0px 0px 5px navy;
                 height: 7.9vh;
                 width: 14.9vw;
-                font-size: 24.9px;
+                font-size: 31.9px;
                 color: magenta;
             }
 
     .portfolio {
         position: relative;
         background-color: rgb(51, 89, 135);
-        height: 100vh;
+        height: 85vh;
         width: 100%;
     }
 
         .portfolio h1 {
+            width: 100%;
+            text-align: center;
+            font-size: 48px;
             color: white;
             position: absolute;
-            top: 10px;
-            left: 43%;
-        }
+            top: 60px;
+            }
 
         .portfolio-grid {
 
             align-content: center;
             display: grid;
-            height: 80vh;
+            height: 40vh;
             max-width: 70%;
             column-gap: 2%;
             align-content: center;
             position: relative;
             left: 15%;
-            top: 20vh;
+            top: 320px;
             grid-template-columns: auto auto auto;
             grid-template-rows: auto auto auto;
-
         }
 
         .portfolio-item {
-
             font-size: 24px;
             width: 100%;
             height: 60%;
             min-width: 60px;
             color: rgb(90, 90, 90);
+
         }
 
         .portfolio-item a {
-
             color: white;
             text-decoration: none;
             display: inline-block;
-            width: 85%;
-            height: 130%;
+            width: 95%;
+            height: 140%;
         }
 
         .portfolio-item a img {
@@ -315,56 +304,50 @@ body {
         .portfolio-item p {
             display: inline-block;
             position: relative;
-            top: -9vh;
+            top: -5vh;
             left: 2vw;
             margin: 0;
             padding: 0;
             width: 80%;
+            font-size: 38px;
         }
 
     .blog {
         position: relative;
-
         background-color: white;
-        height: 100vh;
+        height: 80vh;
         width: 100%;
     }
 
     .blog h1 {
 
-            width: 92%;
+            width: 100%;
+            text-align: center;
             color: black;
             position: absolute;
-            top: 10px;
-            left: 0px;
-            text-align: center
+            top: 40px;
+            font-size: 48px;
         }
 
         .blog-grid {
-
-
             display: grid;
             justify-content: center;
-
             height: 80%;
             column-gap: 2%;
             align-content: center;
-
             grid-template-columns: auto auto auto;
             max-width: 100%;
             position: relative;
             bottom: -90px;
-
         }
 
         .blog-item {
-            
-            font-size: 20px;
+
+            font-size: 30px;
             width: 400px;
             height: 70%;
             min-width: 60px;
             color: rgb(90, 90, 90);
-
         }
 
         .blog-item img {
@@ -374,7 +357,6 @@ body {
 
         .blog-item p {
             display: inline-block;
-
             margin-top: 15px;
             padding: 10;
             width: 100%;
@@ -384,12 +366,13 @@ body {
         }
 
         .blog-item button {
-            height: 7vh;
+            height: 75px;
             width: 14vw;
-            border-radius: 17px;
+            border-radius: 27px;
             position: relative;
-            font-size: 16px;
-            left: 25%;
+            top: 60px;
+            font-size: 28px;
+            left: 15%;
         }
 
         .blog-item button:hover {
