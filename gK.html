@@ -2,18 +2,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GuyKat</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel='stylesheet' id='uncodefont-google-css'  href='//fonts.googleapis.com/css?family=Montserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;subset=vietnamese%2Ccyrillic%2Clatin%2Ccyrillic-ext%2Clatin-ext&#038;ver=2.3.3' type='text/css' media='all' />
+
 </head>
 
 <body>
+    <!-- logo and navbar side by side -->
     <div class="topbar">
         <img src="./images/guykat_white.png" class="logo">
+        <!-- The navbar: -->
         <div class="topnav">
             <a class="active" href="#home">Home</a>
             <a href="#custom">Custom Built eLearning</a>
             <a href="#services">Docebo Services</a>
             <a href="#soft-dev">Software Development</a>
             <a href="#sales">Docebo Sales</a>
-
             <select>
                 <option value="latest">Latest</option>
                 <option value="news">News</option>
@@ -31,16 +34,21 @@
                     href="#contact">CONTACT US</button>
           </div>
     </div>
+    <!-- The element with the big text in the center of the main page -->
     <div class="welcome">
         <p id="top">Docebo Services - UX/UI Enhancements</p>
         <div id="middle">
+            <!-- The quote is split in two lines for easier control -->
             <p id="mid1">"The experience of using an LMS internally</p>
             <p id="mid2">has changed for the better thanks to GuyKat"</p>
         </div>
         <p id="bottom"> - A Very Important Person, ImportantCompany</p>
     </div>
+    <!-- The dividing line between 1st and 2nd section: a waving line -->
     <img src="./images/guykat-swipe.png" class="swipe" alt="swipe line-break">
+    <!-- Plain white element going under the wave at z-index -1: -->
     <div class="below-swipe">
+        <!-- White section continued with grid outlining services offered: -->
         <div class="services-content">
             <h1>Our Services</h1>
             <div class="grid-container">
@@ -63,6 +71,7 @@
             </div>
             <a href="#"><button type="button" class="work">Work with us</button></a>
         </div>
+        <!-- Third section: portfolio grid -->
         <div class="portfolio">
             <h1> Portfolio</h1>
             <div class="portfolio-grid">
@@ -110,6 +119,7 @@
                 </div>
             </div>
         </div>
+        <!-- Bottom section: Blog -->
         <div class="blog">
             <h1>UX/UI Blog Posts</h1>
             <div class="blog-grid">
@@ -117,29 +127,31 @@
                     <img src="./images/blog_post_1.png"
                         alt="QA in eLearning">
                     <p>The Importance of QA in eLearning</p>
-                    <button type="button" class="contact"
-                    onclick="window.location.href='https://www.guykat.com/';">Read More</button>
-
+                    <div class="read-more">
+                        <button type="button" class="contact"
+                            onclick="window.location.href='https://www.guykat.com/';">Read More</button>
+                    </div>
                 </div>
                 <div class="blog-item" >
                     <img src="./images/blog_post_2.png"
                         alt="improve UX">
                     <p>5 easy ways to improve your learning platform's
                         UX</p>
-                    <button type="button" class="contact"
-                        onclick="window.location.href='https://www.guykat.com/';">
+                    <div class="read-more">
+                        <button type="button" class="contact"
+                            onclick="window.location.href='https://www.guykat.com/';">
                         Read More</button>
-
+                    </div>
                 </div>
                 <div class="blog-item" >
                     <img src="./images/blog_post_3.png"
                         alt="next is content">
                     <p>Learning Platform has great UX? Now focus on content</p>
-                    <button type="button" class="contact"
-                    onclick="window.location.href='https://www.guykat.com/';">Read More</button>
-
+                    <div class="read-more">
+                        <button type="button" class="contact"
+                            onclick="window.location.href='https://www.guykat.com/';">Read More</button>
+                    </div>
                 </div>
-
             </div>
         </div>
     </div>
