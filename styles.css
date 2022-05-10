@@ -3,13 +3,18 @@
     font-family: Montserrat, Arial, Helvetica, Verdana, sans-serif;
 }
 
+/* The default resolution is 1920x1020. This uses the Desktop First rule, whereby
+ you start with large screen styles and then you override what you need to with
+ media queries. So, media queries will be max-width.
+
+  There is only one media query at line 404.*/
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
     background-image: url("./images/header_image.png");
     background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* Makes the background 'sticky', same as in a sticky navbar: */
     background-attachment: fixed;
 }
 
@@ -40,7 +45,7 @@ body {
         width: 70%;
         position: absolute;
         right: 90px;
-        font-size: 14px;
+        font-size: 16px;
         /* Add a transparent background color to the top navigation */
         background-color: none;
         padding: 20px;
@@ -62,9 +67,10 @@ body {
             width: 89px;
             color: #f2f2f2;
             border: none;
-            font-size: 14px;
-            padding-left: 22;
-            padding-right: 0;
+            font-size: 16px;
+            /* Moves the writing closer to the down arrow */
+            padding-left: 17px;
+            padding-right: 0px;
             }
 
             option {
@@ -74,7 +80,10 @@ body {
 
         /* 'About' dropdown item */
         #about {
-            width: 113px;
+            width: 114px;
+            /* Moves the writing closer to the down arrow */
+            padding-left: 14px;
+
         }
 
         .contact {
@@ -146,20 +155,25 @@ body {
 
     /* The wave picture serving as border btw section 1 and 2 */
     .swipe {
-        height: 29vh;
+        height: 31.5vh;
         width: 100%;
         position: relative;
+
         left: 0px;
         overflow: hidden;
+
     }
 
     /* White space going under the wave */
     .below-swipe {
         background-color: white;
-        height: 21vh;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 10vh;
         width: 100%;
         position: relative;
-        top: -19vh;
+        top: -20.2vh;
         z-index: -1;
         }
 
@@ -173,15 +187,12 @@ body {
     }
 
         .services-content h1 {
-
             width: 100%;
             text-align: center;
             position: relative;
             top: 85px;
             font-size: 48px;
             font-family: , sans-serif;
-
-
         }
 
         /* The Services grid */
@@ -224,6 +235,8 @@ body {
 
         .grid-container a {
             text-decoration: none;
+            height: 100%;
+
             color: rgb(90, 90, 90);
         }
 
@@ -240,6 +253,10 @@ body {
             top: 240px;
             left: 42%;
         }
+
+            .work:hover {
+                color: magenta;
+            }
 
             .work:active {
                 box-shadow: inset 0px 0px 5px navy;
@@ -393,7 +410,8 @@ body {
         }
 
 
-/* For screens smaller than 1920x1080px (smallest tested resolution is 1280x720px): */
+/* For screens smaller than 1920x1080px
+(works well right down to width: 1280px and height: 720px): */
 @media only screen and (max-width: 1919px), (max-height: 1079px) {
     .topbar {
     margin-top: 10px;
@@ -429,6 +447,7 @@ body {
 
          #about {
             width: 82px;
+            padding-left: 2px;
          }
 
          .contact {
@@ -551,7 +570,7 @@ body {
             font-size: 14px;
         }
 
-        /* Button size gets smaller */
+        /* Button size gets smaller, so the push effect also needs to change: */
         .blog-item button:active {
             box-shadow: inset 0px 0px 5px navy;
             height: 34px;
